@@ -114,7 +114,6 @@ Vue.component("trainer", require("./components/Trainer.vue").default);
 
 const app = new Vue({
     el: "#app",
-    el: "#main",
     router,
     data: {
         search: ""

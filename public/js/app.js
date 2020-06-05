@@ -7946,7 +7946,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.widget-user-header{\n    background-position: center center;\n    background-size: cover;\n    height: 250px !important;\n}\n.widget-user .card-footer{\n    padding: 0;\n}\n\n", ""]);
+exports.push([module.i, "\n.widget-user-header{\r\n    background-position: center center;\r\n    background-size: cover;\r\n    height: 250px !important;\n}\n.widget-user .card-footer{\r\n    padding: 0;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -83361,10 +83361,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var vue_progressbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-progressbar */ "./node_modules/vue-progressbar/dist/vue-progressbar.js");
 /* harmony import */ var vue_progressbar__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(vue_progressbar__WEBPACK_IMPORTED_MODULE_5__);
-var _Vue;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -83450,18 +83446,21 @@ Vue.component("trainer", __webpack_require__(/*! ./components/Trainer.vue */ "./
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-var app = new Vue((_Vue = {
-  el: "#app"
-}, _defineProperty(_Vue, "el", "#main"), _defineProperty(_Vue, "router", router), _defineProperty(_Vue, "data", {
-  search: ""
-}), _defineProperty(_Vue, "methods", {
-  searchit: _.debounce(function () {
-    Fire.$emit("searching");
-  }, 1000),
-  printme: function printme() {
-    window.print();
+var app = new Vue({
+  el: "#app",
+  router: router,
+  data: {
+    search: ""
+  },
+  methods: {
+    searchit: _.debounce(function () {
+      Fire.$emit("searching");
+    }, 1000),
+    printme: function printme() {
+      window.print();
+    }
   }
-}), _Vue));
+});
 
 /***/ }),
 
@@ -84154,8 +84153,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\IT\Documents\Dev\saudi-trainers\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\IT\Documents\Dev\saudi-trainers\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\IT\Desktop\saudi-trainer\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\IT\Desktop\saudi-trainer\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
