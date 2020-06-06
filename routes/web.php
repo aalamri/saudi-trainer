@@ -19,7 +19,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/trainer', 'API\UserController@index')->name('trainer');
+Route::get('/trainer/{id}', 'TrainerController@profile')->name('trainer.profile');
+Route::get('/trainer', 'TrainerController@index')->name('trainer');
 
 
 Auth::routes();

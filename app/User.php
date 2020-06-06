@@ -38,4 +38,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Scope a query to only include trainers.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeTrainer($query)
+    {
+        return $query->where('type', 'user');
+    }
+
+    public function getPhotoUrlAttribute() {
+        return "/img/profile/{$this->attributes['photo']}";
+    }
 }
