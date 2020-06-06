@@ -15,7 +15,7 @@
 		</div> @if($trainers->count() === 0)
 		<div class="alert alert-info"> ليس هناك ما تراه هنا. تحقق مرة أخرى لاحقًا ، ربما؟ </div> @else
 		<div class="row"> @foreach($trainers as $trainer)
-			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+			<div class="mb-3 col-lg-3 col-md-6 col-sm-6 col-xs-12">
 				<a href="{{ route('trainer.profile', [$trainer->id]) }}">
 					<div class="trainer-item">
 						<div class="trainer-head">
@@ -51,7 +51,6 @@
 	box-shadow: 0px 0px 29px 6px rgba(154, 161, 171, 0.18);
 	padding: 20px;
 	position: relative;
-	margin-bottom: 30px;
 	width: 100%;
 	height: 100%;
 	margin-bottom: 40px;
