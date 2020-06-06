@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'PageController@index');
 
 
 Route::get('/trainer/{id}', 'TrainerController@profile')->name('trainer.profile');
