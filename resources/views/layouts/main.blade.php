@@ -32,7 +32,7 @@
             </div>
         </div>
         -->
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md navbar-color">
             <div class="container">
             <div class="site-logo"><a class="navbar-brand" href="/"><img src="/img/logo.png" class="img-fluid" alt="Img" /></a></div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,6 +43,7 @@
                         <li class="nav-item"><a href="{{ url('/') }}" data-scroll-nav="7">الرئيسية</a></li>
                         <li class="nav-item"><a href="#" data-scroll-nav="1">من نحن</a></li>
                         <li class="nav-item"><a href="{{ url('/trainer') }}" data-scroll-nav="3">المدربين</a></li>
+                        <li class="nav-item"><a href="{{ url('/course') }}" data-scroll-nav="3">دورات</a></li>
                         <li class="nav-item"><a href="{{ url('/register') }}" data-scroll-nav="4">طلب الإنضمام</a></li>
                         <li class="nav-item"><a href="{{ url('/login') }}" data-scroll-nav="4">تسجيل الدخول</a></li>
                         <li class="nav-item"><a href="#" data-scroll-nav="4">اتصل بنا</a></li>

@@ -36,14 +36,14 @@ class UserController extends Controller
     public function store(Request $request)
     
     {
-        if (\Gate::allows('isAdmin')) {
+        if (\Illuminate\Support\Facades\Gate::allows('isAdmin')) {
 
         $this->validate($request,[
             'name' => 'required|string|max:191',
             'email' => 'required|string|email|max:191|unique:users',
             'password' => 'required|string|min:8'
         ]);
-        if (\Gate::allows('isAdmin')) {
+        if (\Illuminate\Support\Facades\Gate::allows('isAdmin')) {
 
         return User::create([
             'name' => $request['name'],

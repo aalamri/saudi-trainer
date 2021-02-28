@@ -47,7 +47,7 @@ class User extends Authenticatable
      */
     public function scopeTrainer($query)
     {
-        return $query->where('type', 'user');
+        return $query->where('type', 'admin');
     }
 
     public function getPhotoUrlAttribute() {

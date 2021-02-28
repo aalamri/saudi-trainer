@@ -58,8 +58,18 @@ let routes = [
         path: "/trainer",
         component: require("./components/Trainer.vue").default
     },
-    { path: "/users", component: require("./components/Users.vue").default },
-    { path: "*", component: require("./components/notFound.vue").default }
+    {
+        path: "/courses",
+        component: require("./components/Courses.vue").default
+    },
+    { 
+        path: "/users",
+        component: require("./components/Users.vue").default 
+    },
+    { 
+        path: "*", 
+        component: require("./components/notFound.vue").default 
+    }
 ];
 
 const router = new VueRouter({
@@ -94,6 +104,7 @@ Vue.component(
 
 Vue.component("not-found", require("./components/notFound.vue").default);
 Vue.component("trainer", require("./components/Trainer.vue").default);
+
 
 /**
  * The following block of code may be used to automatically register your

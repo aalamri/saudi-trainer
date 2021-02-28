@@ -23,6 +23,8 @@ class CreateUsersTable extends Migration
             $table->mediumText('bio')->nullable();
             $table->string('photo')->default('arab.png');
             $table->string('status')->default('0');
+            $table->string('verification_code')->nullable();
+            $table->integer('is_verified')->default('0');
             $table->rememberToken();
             $table->timestamps();
         });

@@ -19,11 +19,19 @@ Route::get('/', 'PageController@index');
 
 Route::get('/trainer/{id}', 'TrainerController@profile')->name('trainer.profile');
 Route::get('/trainer', 'TrainerController@index')->name('trainer');
+Route::get('/course/{id}', 'CourseController@profile')->name('course.profile');
+Route::get('/course', 'CourseController@index')->name('course');
 
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/verify', 'Auth\RegisterController@verifyUser')->name('verify.user');
+
+
+//Course
+// Route::resource('courses','CoursesController');
 
 // Route::get('{path}', 'HomeController@index')->where( 'path' , '([A-z\d\-\/_.]+)?' );
 
