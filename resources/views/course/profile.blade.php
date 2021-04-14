@@ -60,21 +60,15 @@
 				<!-- tab -->
 				<div class="col-md-12">
 					<div class="description-block">
-						<ul class="nav nav-tabs mb-5">
+						<!-- <ul class="nav nav-tabs mb-5">
 							<li class="nav-item">
-								<a class="nav-link active show" href="#activity" data-toggle="tab">Activity</a>
+								<a class="nav-link show" href="#profile" data-toggle="tab">Details</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#profile" data-toggle="tab">Profile</a>
-							</li>
-						</ul>
+						</ul> -->
 						<div class="tab-content">
 							<!-- Activity Tab -->
 							<div class="tab-pane active show" id="activity">
-								<h3 class="text-center my-5">Display User Activity</h3>
-							</div>
-							<!-- Setting Tab -->
-							<div class="tab-pane" id="profile">
+								<h3 class="text-center my-5">Course Details</h3>
 								<form class="form-horizontal">
 									<div class="form-group">
 										<label for="inputName" class="col-sm-2 control-label">Title</label>
@@ -90,6 +84,23 @@
 									</div>
 								</form>
 							</div>
+							<!-- Setting Tab -->
+							<!-- <div class="tab-pane" id="profile">
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label for="inputName" class="col-sm-2 control-label">Title</label>
+										<div class="col-sm-12"> {{ $course->title }} </div>
+									</div>
+									<div class="form-group">
+										<label for="inputEmail" class="col-sm-2 control-label">Description</label>
+										<div class="col-sm-12"> {{ $course->description }} </div>
+									</div>
+									<div class="form-group">
+										<label for="inputExperience" class="col-sm-2 control-label">Attendance Type</label>
+										<div class="col-sm-12"> {{ $course->attendance_type }} </div>
+									</div>
+								</form>
+							</div> -->
 							<!-- /.tab-pane -->
 						</div>
 						<!-- /.tab-content -->

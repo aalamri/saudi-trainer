@@ -8,8 +8,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 start-home-content">
-                            <h1>مدربون سعوديون</h1>
-                            <p>الموقع السعودي الأول لملتقى المدربيين السعوديين.</p>
+                            <h1>منصة دكة</h1>
+                            <p>منصة موحده لجميع المدربين داخل المملكة العربيه السعودية لعرض دوراتهم.</p>
                         </div>
                         <div class="col-md-6 start-home-img">
                             <img class="img-fluid" src="img/banner-home-2.svg" alt="Img"/>

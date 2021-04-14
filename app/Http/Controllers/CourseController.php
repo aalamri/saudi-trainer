@@ -37,7 +37,7 @@ class CourseController extends Controller {
     public function profile(Request $request, $id)
     {
         $course = Course::where('id', $id)->first();
-
+        
         if($course === null) {
             abort('404');
         }

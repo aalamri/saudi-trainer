@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>المدربين السعوديين</title>
+    <title>دكة</title>
 
     <link rel="stylesheet" href="/css/fontawesome.min.css">
     <link rel="stylesheet" href="/css/themify-icons.css">
@@ -32,31 +32,35 @@
             </div>
         </div>
         -->
-        <nav class="navbar navbar-expand-md navbar-color">
-            <div class="container">
-            <div class="site-logo"><a class="navbar-brand" href="/"><img src="/img/logo.png" class="img-fluid" alt="Img" /></a></div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"><i class="ti-menu"></i></span>
-                        </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="{{ url('/') }}" data-scroll-nav="7">الرئيسية</a></li>
-                        <li class="nav-item"><a href="#" data-scroll-nav="1">من نحن</a></li>
-                        <li class="nav-item"><a href="{{ url('/trainer') }}" data-scroll-nav="3">المدربين</a></li>
-                        <li class="nav-item"><a href="{{ url('/course') }}" data-scroll-nav="3">دورات</a></li>
-                        <li class="nav-item"><a href="{{ url('/register') }}" data-scroll-nav="4">طلب الإنضمام</a></li>
-                        <li class="nav-item"><a href="{{ url('/login') }}" data-scroll-nav="4">تسجيل الدخول</a></li>
-                        <li class="nav-item"><a href="#" data-scroll-nav="4">اتصل بنا</a></li>
-                    </ul>
-                    <div class="flex item-left">
-                        <div class="relative">
-                            <input type="text">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Dakkah</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item"><a href="{{ url('/trainer') }}" data-scroll-nav="3">المدربين</a></li>
+      <li class="nav-item"><a href="{{ url('/course') }}" data-scroll-nav="3">دورات</a></li>
+      <li class="nav-item"><a href="{{ url('/register') }}" data-scroll-nav="4">طلب الإنضمام</a></li>
+      <li class="nav-item"><a href="{{ url('/login') }}" data-scroll-nav="4">تسجيل الدخول</a></li>
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> -->
+    </ul>
+  </div>
+</nav>
         @yield('content')
         <!-- Start Footer Area -->
         <footer>
